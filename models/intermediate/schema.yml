@@ -1,0 +1,121 @@
+version: 2
+
+models:
+  - name: persons
+    description: "data regarding a person"
+    columns:
+      - name: id
+        description: '{{ doc("id") }}'
+        tests:
+          - not_null
+          - unique
+      - name: full_name
+        description: 'First name and last name of a person'
+        tests:
+          - not_null
+          - unique
+
+  - name: cities
+    description: "data regarding a city"
+    columns:
+      - name: id
+        description: '{{ doc("id") }}'
+        tests:
+          - not_null
+          - unique
+
+      - name: name
+        description: 'name of the city'
+        tests:
+          - not_null
+
+      - name: country
+        description: 'country where a city is located'
+
+  - name: locations
+    description: "location details of a carmen sandiego report"
+    columns:
+      - name: id
+        description: '{{ doc("id") }}'
+        tests:
+          - not_null
+          - unique
+
+      - name: latitude
+        description: '{{ doc("regions_columns_latitude") }}'
+        tests:
+          - not_null
+
+      - name: longitude
+        description: '{{ doc("regions_columns_longitude") }}'
+        tests:
+          - not_null
+
+      - name: city_id
+        description: 'id of  the witness city in the cities table'
+        tests:
+          - relationships:
+              to: ref('cities')
+              field: id
+
+      - name: city_agent_id
+        description: 'id of  the agent city in the cities table'
+        tests:
+          - relationships:
+              to: ref('cities')
+              field: id
+
+
+  - name: reports
+    description: "carmen sightings data for all the regions"
+    columns:
+      - name: id
+        description: '{{ doc("id") }}'
+        tests:
+          - not_null
+          - unique
+      - name: agent_id
+        description: 'id of  the agent in the persons table'
+        tests:
+          - not_null
+          - relationships:
+              to: ref('persons')
+              field: id
+      - name: witness_id
+        description: 'id of  the witness in the persons table'
+        tests:
+          - not_null
+          - relationships:
+              to: ref('persons')
+              field: id
+      - name: location_id
+        description: 'id of  the sighting location in the locations table'
+        tests:
+          - not_null
+          - relationships:
+              to: ref('locations')
+              field: id
+      - name: date_witness
+        description: '{{ doc("regions_columns_date_witness") }}'
+        tests:
+          - not_null
+      - name: date_agent
+        description: '{{ doc("regions_columns_date_agent") }}'
+        tests:
+          - not_null
+      - name: has_weapon
+        description: '{{ doc("regions_columns_has_weapon") }}'
+        tests:
+          - not_null
+      - name: has_hat
+        description: '{{ doc("regions_columns_has_hat") }}'
+        tests:
+          - not_null
+      - name: has_jacket
+        description: '{{ doc("regions_columns_has_jacket") }}'
+        tests:
+          - not_null
+      - name: behavior
+        description: '{{ doc("regions_columns_behavior") }}'
+        tests:
+          - not_null

@@ -1,0 +1,448 @@
+version: 2
+
+models:
+  - name: region_africa
+    description: "Carmen  sightings data for the africa region"
+    columns:
+      - name: date_witness
+        description: '{{ doc("regions_columns_date_witness") }}'
+        tests:
+          - not_null
+      - name: witness
+        description: '{{ doc("regions_columns_witness") }}'
+        tests:
+          - not_null
+      - name: agent
+        description: '{{ doc("regions_columns_agent") }}'
+        tests:
+          - not_null
+      - name: date_agent
+        description: '{{ doc("regions_columns_date_agent") }}'
+        tests:
+          - not_null
+      - name: city_agent
+        description: '{{ doc("regions_columns_city_agent") }}'
+        tests:
+          - not_null
+      - name: country
+        description: '{{ doc("regions_columns_country") }}'
+      - name: city
+        description: '{{ doc("regions_columns_city") }}'
+        tests:
+          - not_null
+      - name: latitude
+        description: '{{ doc("regions_columns_latitude") }}'
+        tests:
+          - not_null
+      - name: longitude
+        description: '{{ doc("regions_columns_longitude") }}'
+        tests:
+          - not_null
+      - name: has_weapon
+        description: '{{ doc("regions_columns_has_weapon") }}'
+        tests:
+          - not_null
+      - name: has_hat
+        description: '{{ doc("regions_columns_has_hat") }}'
+        tests:
+          - not_null
+      - name: has_jacket
+        description: '{{ doc("regions_columns_has_jacket") }}'
+        tests:
+          - not_null
+      - name: behavior
+        description: '{{ doc("regions_columns_behavior") }}'
+        tests:
+          - not_null
+
+  - name: region_america
+    description: "Carmen  sightings data for the america region"
+    columns:
+      - name: date_witness
+        description: '{{ doc("regions_columns_date_witness") }}'
+        tests:
+          - not_null
+      - name: witness
+        description: '{{ doc("regions_columns_witness") }}'
+        tests:
+          - not_null
+      - name: agent
+        description: '{{ doc("regions_columns_agent") }}'
+        tests:
+          - not_null
+      - name: date_agent
+        description: '{{ doc("regions_columns_date_agent") }}'
+        tests:
+          - not_null
+      - name: city_agent
+        description: '{{ doc("regions_columns_city_agent") }}'
+        tests:
+          - not_null
+      - name: country
+        description: '{{ doc("regions_columns_country") }}'
+        tests:
+          - not_null
+      - name: city
+        description: '{{ doc("regions_columns_city") }}'
+        tests:
+          - not_null
+      - name: latitude
+        description: '{{ doc("regions_columns_latitude") }}'
+        tests:
+          - not_null
+      - name: longitude
+        description: '{{ doc("regions_columns_longitude") }}'
+        tests:
+          - not_null
+      - name: has_weapon
+        description: '{{ doc("regions_columns_has_weapon") }}'
+        tests:
+          - not_null
+      - name: has_hat
+        description: '{{ doc("regions_columns_has_hat") }}'
+        tests:
+          - not_null
+      - name: has_jacket
+        description: '{{ doc("regions_columns_has_jacket") }}'
+        tests:
+          - not_null
+      - name: behavior
+        description: '{{ doc("regions_columns_behavior") }}'
+        tests:
+          - not_null
+
+  - name: region_asia
+    description: "Carmen  sightings data for the asia region"
+    columns:
+      - name: date_witness
+        description: '{{ doc("regions_columns_date_witness") }}'
+        tests:
+          - not_null
+      - name: witness
+        description: '{{ doc("regions_columns_witness") }}'
+        tests:
+          - not_null
+      - name: agent
+        description: '{{ doc("regions_columns_agent") }}'
+        tests:
+          - not_null
+      - name: date_agent
+        description: '{{ doc("regions_columns_date_agent") }}'
+        tests:
+          - not_null
+      - name: city_agent
+        description: '{{ doc("regions_columns_city_agent") }}'
+        tests:
+          - not_null
+      - name: country
+        description: '{{ doc("regions_columns_country") }}'
+        tests:
+          - not_null
+      - name: city
+        description: '{{ doc("regions_columns_city") }}'
+        tests:
+          - not_null
+      - name: latitude
+        description: '{{ doc("regions_columns_latitude") }}'
+        tests:
+          - not_null
+      - name: longitude
+        description: '{{ doc("regions_columns_longitude") }}'
+        tests:
+          - not_null
+      - name: has_weapon
+        description: '{{ doc("regions_columns_has_weapon") }}'
+        tests:
+          - not_null
+      - name: has_hat
+        description: '{{ doc("regions_columns_has_hat") }}'
+        tests:
+          - not_null
+      - name: has_jacket
+        description: '{{ doc("regions_columns_has_jacket") }}'
+        tests:
+          - not_null
+      - name: behavior
+        description: '{{ doc("regions_columns_behavior") }}'
+        tests:
+          - not_null
+
+  - name: region_atlantic
+    description: "Carmen  sightings data for the atlantic region"
+    columns:
+      - name: date_witness
+        description: '{{ doc("regions_columns_date_witness") }}'
+        tests:
+          - not_null
+      - name: witness
+        description: '{{ doc("regions_columns_witness") }}'
+        tests:
+          - not_null
+      - name: agent
+        description: '{{ doc("regions_columns_agent") }}'
+        tests:
+          - not_null
+      - name: date_agent
+        description: '{{ doc("regions_columns_date_agent") }}'
+        tests:
+          - not_null
+      - name: city_agent
+        description: '{{ doc("regions_columns_city_agent") }}'
+        tests:
+          - not_null
+      - name: country
+        description: '{{ doc("regions_columns_country") }}'
+        tests:
+          - not_null
+      - name: city
+        description: '{{ doc("regions_columns_city") }}'
+        tests:
+          - not_null
+      - name: latitude
+        description: '{{ doc("regions_columns_latitude") }}'
+        tests:
+          - not_null
+      - name: longitude
+        description: '{{ doc("regions_columns_longitude") }}'
+        tests:
+          - not_null
+      - name: has_weapon
+        description: '{{ doc("regions_columns_has_weapon") }}'
+        tests:
+          - not_null
+      - name: has_hat
+        description: '{{ doc("regions_columns_has_hat") }}'
+        tests:
+          - not_null
+      - name: has_jacket
+        description: '{{ doc("regions_columns_has_jacket") }}'
+        tests:
+          - not_null
+      - name: behavior
+        description: '{{ doc("regions_columns_behavior") }}'
+        tests:
+          - not_null
+
+  - name: region_australia
+    description: "Carmen  sightings data for the australia region"
+    columns:
+      - name: date_witness
+        description: '{{ doc("regions_columns_date_witness") }}'
+        tests:
+          - not_null
+      - name: witness
+        description: '{{ doc("regions_columns_witness") }}'
+        tests:
+          - not_null
+      - name: agent
+        description: '{{ doc("regions_columns_agent") }}'
+        tests:
+          - not_null
+      - name: date_agent
+        description: '{{ doc("regions_columns_date_agent") }}'
+        tests:
+          - not_null
+      - name: city_agent
+        description: '{{ doc("regions_columns_city_agent") }}'
+        tests:
+          - not_null
+      - name: country
+        description: '{{ doc("regions_columns_country") }}'
+        tests:
+          - not_null
+      - name: city
+        description: '{{ doc("regions_columns_city") }}'
+        tests:
+          - not_null
+      - name: latitude
+        description: '{{ doc("regions_columns_latitude") }}'
+        tests:
+          - not_null
+      - name: longitude
+        description: '{{ doc("regions_columns_longitude") }}'
+        tests:
+          - not_null
+      - name: has_weapon
+        description: '{{ doc("regions_columns_has_weapon") }}'
+        tests:
+          - not_null
+      - name: has_hat
+        description: '{{ doc("regions_columns_has_hat") }}'
+        tests:
+          - not_null
+      - name: has_jacket
+        description: '{{ doc("regions_columns_has_jacket") }}'
+        tests:
+          - not_null
+      - name: behavior
+        description: '{{ doc("regions_columns_behavior") }}'
+        tests:
+          - not_null
+
+  - name: region_europe
+    description: "Carmen  sightings data for the europe region"
+    columns:
+      - name: date_witness
+        description: '{{ doc("regions_columns_date_witness") }}'
+        tests:
+          - not_null
+      - name: witness
+        description: '{{ doc("regions_columns_witness") }}'
+        tests:
+          - not_null
+      - name: agent
+        description: '{{ doc("regions_columns_agent") }}'
+        tests:
+          - not_null
+      - name: date_agent
+        description: '{{ doc("regions_columns_date_agent") }}'
+        tests:
+          - not_null
+      - name: city_agent
+        description: '{{ doc("regions_columns_city_agent") }}'
+        tests:
+          - not_null
+      - name: country
+        description: '{{ doc("regions_columns_country") }}'
+        tests:
+          - not_null
+      - name: city
+        description: '{{ doc("regions_columns_city") }}'
+        tests:
+          - not_null
+      - name: latitude
+        description: '{{ doc("regions_columns_latitude") }}'
+        tests:
+          - not_null
+      - name: longitude
+        description: '{{ doc("regions_columns_longitude") }}'
+        tests:
+          - not_null
+      - name: has_weapon
+        description: '{{ doc("regions_columns_has_weapon") }}'
+        tests:
+          - not_null
+      - name: has_hat
+        description: '{{ doc("regions_columns_has_hat") }}'
+        tests:
+          - not_null
+      - name: has_jacket
+        description: '{{ doc("regions_columns_has_jacket") }}'
+        tests:
+          - not_null
+      - name: behavior
+        description: '{{ doc("regions_columns_behavior") }}'
+        tests:
+          - not_null
+
+  - name: region_indian
+    description: "Carmen  sightings data for the indian region"
+    columns:
+      - name: date_witness
+        description: '{{ doc("regions_columns_date_witness") }}'
+        tests:
+          - not_null
+      - name: witness
+        description: '{{ doc("regions_columns_witness") }}'
+        tests:
+          - not_null
+      - name: agent
+        description: '{{ doc("regions_columns_agent") }}'
+        tests:
+          - not_null
+      - name: date_agent
+        description: '{{ doc("regions_columns_date_agent") }}'
+        tests:
+          - not_null
+      - name: city_agent
+        description: '{{ doc("regions_columns_city_agent") }}'
+        tests:
+          - not_null
+      - name: country
+        description: '{{ doc("regions_columns_country") }}'
+        tests:
+          - not_null
+      - name: city
+        description: '{{ doc("regions_columns_city") }}'
+        tests:
+          - not_null
+      - name: latitude
+        description: '{{ doc("regions_columns_latitude") }}'
+        tests:
+          - not_null
+      - name: longitude
+        description: '{{ doc("regions_columns_longitude") }}'
+        tests:
+          - not_null
+      - name: has_weapon
+        description: '{{ doc("regions_columns_has_weapon") }}'
+        tests:
+          - not_null
+      - name: has_hat
+        description: '{{ doc("regions_columns_has_hat") }}'
+        tests:
+          - not_null
+      - name: has_jacket
+        description: '{{ doc("regions_columns_has_jacket") }}'
+        tests:
+          - not_null
+      - name: behavior
+        description: '{{ doc("regions_columns_behavior") }}'
+        tests:
+          - not_null
+
+  - name: region_pacific
+    description: "Carmen  sightings data for the pacific region"
+    columns:
+      - name: date_witness
+        description: '{{ doc("regions_columns_date_witness") }}'
+        tests:
+          - not_null
+      - name: witness
+        description: '{{ doc("regions_columns_witness") }}'
+        tests:
+          - not_null
+      - name: agent
+        description: '{{ doc("regions_columns_agent") }}'
+        tests:
+          - not_null
+      - name: date_agent
+        description: '{{ doc("regions_columns_date_agent") }}'
+        tests:
+          - not_null
+      - name: city_agent
+        description: '{{ doc("regions_columns_city_agent") }}'
+        tests:
+          - not_null
+      - name: country
+        description: '{{ doc("regions_columns_country") }}'
+        tests:
+          - not_null
+      - name: city
+        description: '{{ doc("regions_columns_city") }}'
+        tests:
+          - not_null
+      - name: latitude
+        description: '{{ doc("regions_columns_latitude") }}'
+        tests:
+          - not_null
+      - name: longitude
+        description: '{{ doc("regions_columns_longitude") }}'
+        tests:
+          - not_null
+      - name: has_weapon
+        description: '{{ doc("regions_columns_has_weapon") }}'
+        tests:
+          - not_null
+      - name: has_hat
+        description: '{{ doc("regions_columns_has_hat") }}'
+        tests:
+          - not_null
+      - name: has_jacket
+        description: '{{ doc("regions_columns_has_jacket") }}'
+        tests:
+          - not_null
+      - name: behavior
+        description: '{{ doc("regions_columns_behavior") }}'
+        tests:
+          - not_null
