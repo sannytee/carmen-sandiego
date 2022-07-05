@@ -16,6 +16,11 @@ SELECT
 	to_char(datum, 'yyyy/mm') AS YearMonth,
 	-- ISO calendar year and week
 	to_char(datum, 'iyyy/IW') AS YearCalendarWeek,
+	DATE_PART('days',
+        DATE_TRUNC('month', date(datum))
+        + '1 MONTH'::INTERVAL
+        - '1 DAY'::INTERVAL
+    ) as DaysInMonth,
 	-- Weekend
 	CASE WHEN extract(isodow from datum) in (6, 7) THEN 'Weekend' ELSE 'Weekday' END AS Weekend,
 	-- Some periods of the year, adjust for your organisation and country
